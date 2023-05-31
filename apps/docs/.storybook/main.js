@@ -17,7 +17,7 @@ module.exports = {
             find: "@vers/core",
             replacement: path.resolve(
               __dirname,
-              "../../../packages/vers-core/"
+              "../../../packages/ui/"
             ),
           },
         ],
