@@ -5,8 +5,7 @@ import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
 
 # Button
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
-
+This is the main CTA button
 ## Props
 
 <ArgsTable of={Button} />
@@ -16,5 +15,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl ege
 <Canvas>
   <Story name="Default">
     <Button>Hello</Button>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Secondary">
+    <Button variant='secondary'>Hello</Button>
   </Story>
 </Canvas>
