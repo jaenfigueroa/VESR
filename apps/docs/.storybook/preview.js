@@ -1,4 +1,4 @@
-import '@vers/core/index.css';
+import '@vers/core/dist/index.css';
 
 const preview = {
   parameters: {},
