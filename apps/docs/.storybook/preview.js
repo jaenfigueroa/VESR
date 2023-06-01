@@ -1,4 +1,4 @@
-import '@vers/core/dist/index.css';
+import '@vers/uiv2/dist/style.css';
 
 const preview = {
   parameters: {},

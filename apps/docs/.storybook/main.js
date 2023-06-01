@@ -14,10 +14,10 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "@vers/core",
+            find: "@vers/uiv2",
             replacement: path.resolve(
               __dirname,
-              "../../../packages/ui/"
+              "../../../packages/uiv2/"
             ),
           },
         ],
