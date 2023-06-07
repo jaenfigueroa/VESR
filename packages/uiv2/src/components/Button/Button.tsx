@@ -16,7 +16,7 @@ export interface Props {
   action?: () => void
 }
 
-const defaultClasses = 'vers-px-3 vers-py-2 sm:vers-p-3 vers-text-lg vers-text-white vers-font-bold vers-flex vers-gap-2 vers-duration-500'
+const defaultClasses = 'vers-px-3 vers-py-2 sm:vers-p-3 vers-text-md sm:vers-text-lg vers-text-white vers-font-bold vers-flex vers-gap-2 vers-duration-500'
 
 const colorClassNames = {
   primary: 'vers-bg-primary hover:vers-bg-green',

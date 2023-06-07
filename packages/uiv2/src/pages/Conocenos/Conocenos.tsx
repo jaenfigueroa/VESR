@@ -13,12 +13,12 @@ export const Conocenos = () => {
     <section className='vers-grow'>
       <Hero img='/img4.webp'>
         <div className='vers-h-full vers-flex vers-flex-col vers-justify-center vers-items-center vers-gap-[20px] md:vers-gap-[40px] vers-w-full md:vers-w-[700px] vers-bg-[#9b64a1] vers-p-6'>
-          <h2 className='vers-text-3xl md:vers-text-4xl vers-font-bold vers-text-white vers-uppercase vers-text-center'>Quienes<br></br>Somos</h2>
+          <h2 className='vers-text-3xl md:vers-text-4xl vers-font-bold vers-text-white vers-uppercase vers-text-center'>Quienes Somos</h2>
           <p className='vers-text-center vers-text-md md:vers-text-xl vers-text-gray-dark vers-text-white'>Somos una ORGANIZACIÓN JUVENIL multidisciplinaria reconocida por la SENAJU y miembro del CMPJ, que se desarrolla bajo los principios de la responsabilidad social, enmarcado en los objetivos de desarrollo sostenible, por medio de la Educación Sexual Responsable. Para promover el bienestar de la salud sexual y reproductiva de los derechos sexuales y reproductivos en la comunidad universitaria y población general.</p>
           <div className='vers-flex vers-flex-wrap vers-gap-1 vers-justify-center'>
             {
               SKILLS.map((skill, index) => (
-                <img key={index} className='vers-h-[85px]' src={skill.image} alt={skill.description} />
+                <img key={index} className='vers-h-[50px] sm:vers-h-[80px]' src={skill.image} alt={skill.description} />
               ))
             }
           </div>
