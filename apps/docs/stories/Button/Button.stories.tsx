@@ -1,7 +1,7 @@
-import type { Meta } from '@storybook/react';
-import { Button } from './Button';
+import type { Meta, StoryObj  } from '@storybook/react'
+import { Button } from '../../../../packages/uiv2/src/components/Button/Button';
 
-const meta:Meta = {
+const meta:Meta<typeof Button> = {
   title: 'components/Button',
   component: Button,
   tags: ['autodocs'],
@@ -11,32 +11,47 @@ const meta:Meta = {
       control: 'text',
     },
     variant: {
-      control: {
-        type: 'select',
-        options: ['primary', 'secondary', 'tertiary'],
-      },
+      control: 'select',
+      options: ['primary', 'secondary', 'tertiary'],
     },
   },
   args: {
     text: 'Mi Boton',
-    variant: 'primary'
-  }
+    variant: 'primary',
+  },
 }
 
-export default meta;
+export default meta
 
-/* BOTON PRIMARIO */
-export const Primary = {
+type Story = StoryObj<typeof Button>
+
+export const Primary:Story  = {
   args: {
-    text: 'Mas informacion',
-  }
+    text: 'Más información',
+    variant: 'primary',
+  },
 }
 
-/* BOTON SECUNDARIO */
-export const Secondary = {
+export const Secondary:Story  = {
   args: {
-    children: 'Mas informacion',
+    text: 'Más información',
     variant: 'secondary',
-  }
+  },
+}
+
+export const Tertiary = {
+  args: {
+    text: 'Más información',
+    variant: 'primary',
+    icon: 'face',
+  },
+}
+
+export const Quaternary = {
+  args: {
+    text: 'Más información',
+    variant: 'secondary',
+    icon: 'face',
+  },
 }
 
