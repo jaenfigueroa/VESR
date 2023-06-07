@@ -47,35 +47,11 @@ Se parte de nuestra familia.</p>
           <Subtitle text='equipo directivo'>
             <Grid>
               <>
-                <CardUser user={{  img: '/equipo/image 4 (1).png',
-                  name: 'Maria',
-                  position: 'Gerente',
-                  age: 23,
-                  degree: 'Ing. Industrial',
-                }} />
-                <CardUser user={{  img: '/equipo/image 4 (1).png',
-                  name: 'Maria',
-                  position: 'Gerente',
-                  age: 23,
-                  degree: 'Ing. Industrial',
-                }} />
-                <CardUser user={{  img: '/equipo/image 4 (1).png',
-                  name: 'Maria',
-                  position: 'Gerente',
-                  age: 23,
-                  degree: 'Ing. Industrial',
-                }} />
-                <CardUser user={{  img: '/equipo/image 4 (1).png',
-                  name: 'Maria',
-                  position: 'Gerente',
-                  age: 23,
-                  degree: 'Ing. Industrial',
-                }} />
-                <CardUser user={{  img: '/equipo/image 4 (1).png',
-                  name: 'Maria',
-                  position: 'Gerente',
-                  age: 23,
-                  degree: 'Ing. Industrial'} } />
+                <CardUser />
+                <CardUser />
+                <CardUser />
+                <CardUser />
+                <CardUser />
               </>
             </Grid>
           </Subtitle>
