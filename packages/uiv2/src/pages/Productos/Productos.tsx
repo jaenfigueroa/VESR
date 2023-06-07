@@ -4,6 +4,7 @@ import { Grid } from '../../components/Grid/Grid'
 import { HeroProducts } from '../../components/HeroProducts/HeroProducts'
 import { Main } from '../../components/Main/Main'
 import { Subtitle } from '../../components/Sutitle/Subtitle'
+import { PRODUCTS_LIST } from './data/productsList'
 
 export const Productos = () => {
   return (
@@ -14,12 +15,12 @@ export const Productos = () => {
         <Main>
           <Subtitle text='Productos TOP'>
             <Grid>
-              <>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
+            <>
+              {
+                PRODUCTS_LIST.map((product, index) => (
+                  <CardProduct product={product} key={index}/>
+                ))
+              }
               </>
             </Grid>
           </Subtitle>
