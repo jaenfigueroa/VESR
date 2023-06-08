@@ -25,7 +25,7 @@ export const Header = () => {
   const alternateNav = () => setNavActive(!navActive)
 
   return (
-    <header className='vers-relative vers-bg-white vers-border-b-4 vers-border-solid vers-border-primary vers-px-4 vers-flex vers-justify-between vers-items-center vers-h-header'>
+    <header className=' vers-bg-white vers-border-b-4 vers-border-solid vers-border-primary vers-px-4 vers-flex vers-justify-between vers-items-center vers-h-header vers-relative vers-stickyxxxx vers-top-[0]xxxx vers-z-[1]'>
       <div className='vers-flex vers-justify-center vers-items-center vers-gap-2'>
         {
           isMobile && (
