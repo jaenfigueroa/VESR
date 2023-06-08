@@ -46,6 +46,7 @@ module.exports = {
       ...baseColors,
       primary: baseColors['purple-800'],
       secondary: baseColors['pink-200'],
+      tertiary: baseColors['pink-700'],
     },
     boxShadow: {
       sm: '0px 2px 4px 0px rgba(11, 10, 55, 0.15)',

@@ -20,7 +20,7 @@ const defaultClasses = 'vers-px-3 vers-py-2 sm:vers-p-3 vers-text-md sm:vers-tex
 
 const colorClassNames = {
   primary: 'vers-bg-primary hover:vers-bg-green',
-  secondary: 'vers-bg-green hover:vers-bg-green-dark',
+  secondary: 'vers-bg-tertiary hover:vers-bg-green-dark',
 }
 
 /**
