@@ -42,7 +42,7 @@ export const Conocenos = () => {
           </div>
 
           <Subtitle text='objetivos'>
-            <div className='vers-bg-pink-100 vers-p-2 md:vers-p-4 vers-rounded-md vers-flex vers-flex-col vers-gap-2 md:vers-gap-4 md:vers-flex-row md:vers-h-[250px] md:vers-items-center'>
+            <div className='vers-bg-pink-100 vers-p-2 md:vers-p-4 vers-flex vers-flex-col vers-gap-2 md:vers-gap-4 md:vers-flex-row md:vers-h-[250px] md:vers-items-center'>
               <div className='vers-flex vers-flex-col vers-gap-1 md:vers-gap-2'>
                 <h2 className='vers-text-xl md:vers-text-3xl vers-uppercase vers-font-bold'>general</h2>
                 <p>Promoción del bienestar en la salud sexual y reproductiva a través de la comunidad VESR para la comunidad.</p>

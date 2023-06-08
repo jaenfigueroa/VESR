@@ -12,7 +12,7 @@ type Props = {
 
 export const CardUser = ({user}:Props) => {
   return (
-    <article className='vers-bg-purple-300 vers-rounded-md vers-flex vers-items-center vers-justify-center  vers-grow'>
+    <article className='vers-bg-purple-300 vers-flex vers-items-center vers-justify-center  vers-grow'>
       <div className='vers-p-4 sm:vers-p-4 vers-flex vers-flex-col vers-gap-2 vers-items-center '>
         <div className='vers-flex vers-justify-centervers-relative vers-bg-xxxxxxxgreen vers-justify-center'>
           <img className='vers-w-[70%] sm:vers-w-[60%] vers-aspect-square vers-object-cover vers-object-center vers-rounded-full' src={user.image} />
