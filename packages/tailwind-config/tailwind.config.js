@@ -28,6 +28,7 @@ const baseColors = {
   'green': '#adc743',
   'green-dark': '#9cb53a',
   blue: '#3d9be9',
+  'blue-dark': '#1077fa',
   red: '#ff6161',
 }
 

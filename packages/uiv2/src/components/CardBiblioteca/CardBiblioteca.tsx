@@ -19,8 +19,8 @@ export const CardBiblioteca = ({ color='red' }: Props) => {
           </div> */}
           <h2 className='vers-inline-block md:vers-rotate-[-90deg]  vers-text-white vers-text-2xl md:vers-text-3xl vers-uppercase vers-font-bold vers-bg-xxxxxred'>festividades</h2>
         </div>
-        <div className='sm:vers-flex sm:vers-items-end vers-bgxxxxx-red vers-pb-6 vers-pr-1'>
-          <p className='vers-text-white vers-leading-[30px]'>Descubre mayor información sobre festividades como el día del condón, el día del sexo oral, entre otros.</p>
+        <div className='sm:vers-flex sm:vers-items-end md:vers-pb-6 vers-pr-1'>
+          <p className='vers-text-white vers-leading-[20px] sm:vers-leading-[30px]'>Descubre mayor información sobre festividades como el día del condón, el día del sexo oral, entre otros.</p>
         </div>
       </div>
       <div className='vers-h-auto vers-overflow-hidden md:h-full vers-bg-blue'>

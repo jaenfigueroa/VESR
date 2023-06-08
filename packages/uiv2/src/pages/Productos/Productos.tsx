@@ -15,12 +15,12 @@ export const Productos = () => {
         <Main>
           <Subtitle text='Productos TOP'>
             <Grid>
-            <>
-              {
-                PRODUCTS_LIST.map((product, index) => (
-                  <CardProduct product={product} key={index}/>
-                ))
-              }
+              <>
+                {
+                  PRODUCTS_LIST.map((product, index) => (
+                    <CardProduct product={product} key={index}/>
+                  ))
+                }
               </>
             </Grid>
           </Subtitle>

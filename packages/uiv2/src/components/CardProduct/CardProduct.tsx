@@ -6,7 +6,7 @@ type Props = {
 
 export const CardProduct = ({ product }: Props) => {
   return (
-    <article className='vers-bg-pink-800 vers-overflow-hidden vers-rounded-lg vers-drop-shadow-[3px_3px_5px_#f5b4ea] vers-border-solid vers-border-2 vers-border-pink-800'>
+    <article className='vers-bg-purple-500 vers-overflow-hidden vers-rounded-lg vers-drop-shadow-[3px_3px_5px_#f5b4ea] vers-border-solid vers-border-2 vers-border-purple-500'>
       <div className='vers-aspect-square vers-w-full'>
         <img className='vers-h-full vers-w-full vers-object-contain vers-bg-white vers-p-2' src={product.image} alt='' />
       </div>
