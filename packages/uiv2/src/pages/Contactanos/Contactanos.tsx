@@ -4,8 +4,8 @@ import { Subtitle } from '../../components/Sutitle/Subtitle'
 const InputLIst = [
   { type: 'text', placeholder: 'Nombre'},
   { type: 'text', placeholder: 'Apellido' },
-  { type: 'text', placeholder: 'Email' },
-  { type: 'text', placeholder: 'Celular' },
+  { type: 'email', placeholder: 'Email' },
+  { type: 'number', placeholder: 'Celular' },
 ]
 
 const InputClasses = 'vers-p-1 md:vers-p-3 vers-border-solid vers-border-4 vers-border-primary vers-text-xl placeholder:vers-text-xl vers-text-black placeholder:vers-text-gray vers-font-medium vers-drop-shadow-[-5px_5px_0px_#dbbddc] md:vers-drop-shadow-[10px_10px_0px_#dbbddc]'

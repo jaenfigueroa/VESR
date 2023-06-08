@@ -1,9 +1,4 @@
-export type Product = {
-  title: string,
-  description: string
-  price: number,
-  image: string
-}
+import { Product } from '../../../components/CardProduct/CardProduct';
 
 export const PRODUCTS_LIST:Product[] = [
   {

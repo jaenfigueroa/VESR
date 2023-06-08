@@ -1,4 +1,9 @@
-import { Product } from '../../pages/Productos/data/productsList'
+export type Product = {
+  title: string,
+  description: string
+  price: number,
+  image: string
+}
 
 type Props = {
   product: Product

@@ -3,6 +3,7 @@ import { Grid } from '../../components/Grid/Grid'
 import { HeroServicios } from '../../components/HeroServicios/HeroServicios'
 import { Main } from '../../components/Main/Main'
 import { Subtitle } from '../../components/Sutitle/Subtitle'
+import { SERVICES } from './data/Services'
 
 export const Servicios = () => {
   return (
@@ -12,12 +13,11 @@ export const Servicios = () => {
         <Subtitle text='Servicios'>
           <Grid>
             <>
-              <CardService/>
-              <CardService/>
-              <CardService/>
-              <CardService/>
-              <CardService/>
-              <CardService/>
+              {
+                SERVICES.map((element, index) => (
+                  <CardService element={element} key={index}/>
+                ))
+              }
             </>
           </Grid>
         </Subtitle>
