@@ -1,6 +1,6 @@
-import { CardService } from '../../components/CardService/CardService'
+import { CardService } from '../../components/Cards/CardService/CardService'
 import { Grid } from '../../components/Grid/Grid'
-import { HeroServicios } from '../../components/HeroServicios/HeroServicios'
+import { HeroServicios } from '../../components/Heros/HeroServicios/HeroServicios'
 import { Main } from '../../components/Main/Main'
 import { Subtitle } from '../../components/Sutitle/Subtitle'
 import { SERVICES } from './data/Services'

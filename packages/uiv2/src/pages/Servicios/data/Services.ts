@@ -1,4 +1,4 @@
-import { ServiceItem } from '../../../components/CardService/CardService';
+import { ServiceItem } from '../../../components/Cards/CardService/CardService';
 
 export const SERVICES:ServiceItem[] = [
   {

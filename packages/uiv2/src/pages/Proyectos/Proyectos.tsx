@@ -1,5 +1,5 @@
-import { CardProject } from '../../components/CardProject/CardProject'
-import { HeroProjects } from '../../components/HeroProjects/HeroProjects'
+import { CardProject } from '../../components/Cards/CardProject/CardProject'
+import { HeroProjects } from '../../components/Heros/HeroProjects/HeroProjects'
 import { Main } from '../../components/Main/Main'
 
 export const Proyectos = () => {

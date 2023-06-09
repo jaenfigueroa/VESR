@@ -1,4 +1,4 @@
-import { ButtonTertiary } from '../ButtonTertiary/ButtonTertiary'
+import { ButtonTertiary } from '../Buttons/ButtonTertiary/ButtonTertiary'
 import { FEATURES, Features } from './Data/features'
 
 export const HeroProducts = () => {

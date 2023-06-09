@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { Button } from '../../components/Button/Button'
-import { Hero } from '../../components/Hero/Hero'
-import { Slide } from '../../components/Slide/Slide'
+import { Button } from '../../components/Buttons/Button/Button'
+import { Hero } from '../../components/Heros/Hero/Hero'
+import { Slide } from '../../components/Slides/Slide/Slide'
 import { Subtitle } from '../../components/Sutitle/Subtitle'
-import { Facebook } from '../../components/Facebook/Facebook'
+import { FacebookEmbedded } from '../../components/FacebookEmbedded/FacebookEmbedded'
 import { Main } from '../../components/Main/Main'
 
 export const Inicio = () => {
@@ -33,7 +33,7 @@ export const Inicio = () => {
 
       <Main>
         <div className='vers-grid vers-grid-cols-1 md:vers-grid-cols-[1.5fr,2.5fr]   vers-gap-4 lg:vers-gap-6 '>
-          <Facebook />
+          <FacebookEmbedded />
           <Subtitle text='Líneas temáticas'>
             <div className='vers-grid vers-grid-cols-2 vers-grid-rows-2'>
               <img className='vers-w-full' src='/main/Frame 4.png' alt='Reunion de mujeres' />

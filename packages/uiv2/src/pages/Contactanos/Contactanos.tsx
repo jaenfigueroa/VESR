@@ -55,7 +55,7 @@ export const Contactanos = () => {
               name='telefono'
               placeholder={'Numero de telefono'}
               onChange={onChange}
-              pattern="[0-9]{10}"
+              pattern="[0-9]{9}"
               title="Por favor, introduce un número de teléfono válido de 9 dígitos, sin incluir el codigo de pais +51, Ejm: 123 456 789"
               required
             />

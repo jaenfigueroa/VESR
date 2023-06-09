@@ -1,5 +1,5 @@
 import { BackGround } from '../../components/BackGround/BackGround'
-import { CardProduct } from '../../components/CardProduct/CardProduct'
+import { CardProduct } from '../../components/Cards/CardProduct/CardProduct'
 import { Grid } from '../../components/Grid/Grid'
 import { HeroProducts } from '../../components/HeroProducts/HeroProducts'
 import { Main } from '../../components/Main/Main'

@@ -1,4 +1,4 @@
-import { CardBiblioteca } from '../../components/CardBiblioteca/CardBiblioteca'
+import { CardBiblioteca } from '../../components/Cards/CardBiblioteca/CardBiblioteca'
 import { Main } from '../../components/Main/Main'
 
 export const Biblioteca = () => {
