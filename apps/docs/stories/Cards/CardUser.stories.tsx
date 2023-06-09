@@ -22,6 +22,7 @@ const meta:Meta<typeof CardUser> = {
         { name: 'green', value: '#0f0' },
         { name: 'blue', value: '#00f' },
       ],
+      default: 'red',
     },
   },
 }

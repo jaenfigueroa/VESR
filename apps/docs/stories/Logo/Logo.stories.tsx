@@ -38,8 +38,16 @@ export const Example2:Story = {
 export const Example3:Story = {
   args: {
     variant: 'white',
-    width:'medium'
+    width:'small'
   },
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: 'purple', value: '#5f2475' },
+      ],
+      default: 'purple'
+    },
+  }
 }
 
 export const Example4:Story = {
@@ -47,6 +55,14 @@ export const Example4:Story = {
     variant: 'white',
     width:'medium'
   },
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: 'purple', value: '#5f2475' },
+      ],
+      default: 'purple'
+    },
+  }
 }
 
 export default meta

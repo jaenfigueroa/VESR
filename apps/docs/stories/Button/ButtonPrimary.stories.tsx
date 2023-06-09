@@ -1,4 +1,5 @@
-import type { Meta, StoryObj  } from '@storybook/react'
+import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react'
 import ButtonPrimary, { Icons, colorClassNames } from '../../../../packages/uiv2/src/components/Buttons/ButtonPrimary';
 
 const meta:Meta<typeof ButtonPrimary> = {
@@ -27,6 +28,9 @@ const meta:Meta<typeof ButtonPrimary> = {
     onClick: {
       description: 'Accion a ejecutar al hacer click',
       action: 'clicked',
+      play: () => {
+        console.log('hola mundo')
+      }
     }
   },
 }
