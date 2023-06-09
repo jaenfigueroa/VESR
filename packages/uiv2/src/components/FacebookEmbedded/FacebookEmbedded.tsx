@@ -33,7 +33,7 @@ export const FacebookEmbedded = () => {
         <iframe
           ref={targetRef}
           className='vers-border-2 vers-borde-solid versxxx-border-red vers-w-full vers-h-full vers-border-none'
-          src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVESRoficial&tabs=timeline&width=${width}&height=${height}&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId`}
+          src={`xxxxxxhttps://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVESRoficial&tabs=timeline&width=${width}&height=${height}&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId`}
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
     </div>

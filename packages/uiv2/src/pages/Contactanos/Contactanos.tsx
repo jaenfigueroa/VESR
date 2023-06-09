@@ -25,6 +25,7 @@ export const Contactanos = () => {
               className={InputClasses}
               type='text'
               name='name'
+              pattern='^[A-Za-z\s]+$'
               placeholder='Nombres'
               onChange={onChange}
               title='El nombre o nombres no deben contener números ni caracteres especiales.'
@@ -35,6 +36,7 @@ export const Contactanos = () => {
               type='text'
               name='lastName'
               placeholder='Apellidos'
+              pattern='^[A-Za-z\s]+$'
               onChange={onChange}
               title='El apellido o apellidos no deben contener números ni caracteres especiales.'
               required
