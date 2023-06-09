@@ -2,11 +2,6 @@ import Title from '../../components/Title/Title'
 import MainContainer from '../../components/MainContainer/MainContainer'
 import {useState} from 'react';
 
-const InputLIst = [
-  { type: 'text', placeholder: 'Nombre', name: 'name'},
-  { type: 'text', placeholder: 'Apellido', name: 'lastName' },
-]
-
 const InputClasses = 'vers-p-1 md:vers-p-3 vers-border-solid vers-border-4 vers-border-primary vers-text-xl placeholder:vers-text-xl vers-text-black placeholder:vers-text-gray vers-font-medium vers-drop-shadow-[-5px_5px_0px_#dbbddc] md:vers-drop-shadow-[10px_10px_0px_#dbbddc]'
 
 export const Contactanos = () => {
@@ -26,19 +21,24 @@ export const Contactanos = () => {
       <MainContainer>
         <Title text='Cóntactanos'>
           <form className='vers-grid vers-grid-cols-1 sm:vers-grid-cols-2 vers-gap-4' onSubmit={onSubmit}>
-            {
-              InputLIst.map((input, index) => (
-                <input
-                  key={index}
-                  className={InputClasses}
-                  type={input.type}
-                  name={input.name}
-                  placeholder={input.placeholder}
-                  onChange={onChange}
-                  required
-                />
-              ))
-            }
+            <input
+              className={InputClasses}
+              type='text'
+              name='name'
+              placeholder='Nombres'
+              onChange={onChange}
+              title='El nombre o nombres no deben contener números ni caracteres especiales.'
+              required
+            />
+            <input
+              className={InputClasses}
+              type='text'
+              name='lastName'
+              placeholder='Apellidos'
+              onChange={onChange}
+              title='El apellido o apellidos no deben contener números ni caracteres especiales.'
+              required
+            />
             <input
               className={InputClasses}
               type='email'
