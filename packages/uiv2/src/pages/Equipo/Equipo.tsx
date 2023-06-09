@@ -48,7 +48,7 @@ export const Equipo = () => {
                   <>
                     {
                       list.members.map((member, index) => (
-                        <CardUser user={member} key={index}/>
+                        <CardUser {...member} key={index} />
                       ))
                     }
                   </>

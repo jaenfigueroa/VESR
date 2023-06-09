@@ -1,14 +1,8 @@
-interface Person {
-  name: string
-  position: string
-  age: number
-  degree: string
-  image: string,
-}
+import { CardUserProps } from '../../../components/Cards/CardUser'
 
 interface Equipo {
   title: string
-  members: Person[]
+  members: CardUserProps[]
 }
 
 export const NUESTRO_EQUIPOS:Equipo[] = [

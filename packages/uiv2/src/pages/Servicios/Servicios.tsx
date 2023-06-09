@@ -14,8 +14,8 @@ export const Servicios = () => {
           <Grid>
             <>
               {
-                SERVICES.map((element, index) => (
-                  <CardService element={element} key={index}/>
+                SERVICES.map((service, index) => (
+                  <CardService {...service} key={index}/>
                 ))
               }
             </>

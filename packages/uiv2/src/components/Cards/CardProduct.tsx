@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+
 type Props = {
   title: string,
   description: string
@@ -16,7 +19,7 @@ const CardProduct = ({ title='Titulo', description='Descripcion', price=0,image=
         <p className='xsm:vers-text-md vers-text-white'>{description }</p>
         <div className='vers-flex vers-justify-between vers-w-full vers-items-center'>
           <p className='vers-text-3xl vers-font-bold vers-text-white'>${price.toFixed(2)}</p>
-          <i className='fa-solid fa-circle-play vers-text-5xl vers-text-white'></i>
+          <FontAwesomeIcon icon={faArrowCircleRight} className='vers-text-5xl vers-text-white'/>
         </div>
       </div>
     </article>
