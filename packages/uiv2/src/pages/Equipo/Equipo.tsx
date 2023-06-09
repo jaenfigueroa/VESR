@@ -42,13 +42,13 @@ export const Equipo = () => {
 
           {/* LISTA */}
           {
-            NUESTRO_EQUIPOS.map((list) => (
-              <Subtitle text={list.title}>
+            NUESTRO_EQUIPOS.map((list, index) => (
+              <Subtitle text={list.title} key={index}>
                 <Grid>
                   <>
                     {
-                      list.members.map((member) => (
-                        <CardUser user={member} />
+                      list.members.map((member, index) => (
+                        <CardUser user={member} key={index}/>
                       ))
                     }
                   </>
