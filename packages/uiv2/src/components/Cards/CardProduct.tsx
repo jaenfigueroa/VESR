@@ -19,7 +19,7 @@ const CardProduct = ({ title='Titulo', description='Descripcion', price=0,image=
         <p className='xsm:vers-text-md vers-text-white'>{description }</p>
         <div className='vers-flex vers-justify-between vers-w-full vers-items-center'>
           <p className='vers-text-3xl vers-font-bold vers-text-white'>${price.toFixed(2)}</p>
-          <FontAwesomeIcon icon={faArrowCircleRight} className='vers-text-5xl vers-text-white'/>
+          <FontAwesomeIcon icon={faArrowCircleRight} className='vers-text-5xl vers-text-white hover:vers-scale-105 vers-transition-transform'/>
         </div>
       </div>
     </article>

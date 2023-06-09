@@ -13,7 +13,7 @@ export const HeroProducts = () => {
       <div className='vers-flex vers-flex-col sm:vers-flex-row vers-gap-1 sm:vers-gap-2 md:vers-gap-3 '>
         {
           FEATURES.map((element:Features, index) => (
-            <article key={index} className='vers-bg-white vers-rounded-xl vers-p-1 xsm:vers-p-2 md:vers-p-3 vers-w-full vers-max-w-[270px] vers-flex vers-flex-col md:vers-gap-1 vers-items-center xsm:vers-items-start'>
+            <article key={index} className='vers-bg-white vers-rounded-xl vers-p-1 xsm:vers-p-2 md:vers-p-3 vers-w-full vers-max-w-[270px] vers-flex vers-flex-col md:vers-gap-1 vers-items-center xsm:vers-items-start hover:vers-scale-110 vers-transition-transform'>
               <div className='vers-flex vers-items-center vers-gap-1 md:vers-gap-[1.2rem]'>
                 <img src={element.icon} className={`vers-hidden xsm:vers-block vers-w-[2rem] sm:vers-w-[3rem] md:vers-w-[3.5rem]`}></img>
                 <p className='vers-text-lg vers-font-bold vers-uppercase md:vers-text-2xl md:vers-leading-7'>{element.title}</p>

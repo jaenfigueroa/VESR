@@ -3,7 +3,7 @@ import { ItemBiblioteca } from '../../../components/Cards/CardBiblioteca';
 export const SECCTIONS_LIST:ItemBiblioteca[] = [
   {
     title: 'Festividades',
-    description: 'Descubre mayor información sobre festividades como el día del condón, el día del sexo oral, entre otros.cccccccccccccccccccxxxxxxxxxxxxxxxxxxxxcccccccccccccccccxxxxx',
+    description: 'Descubre mayor información sobre festividades como el día del condón, el día del sexo oral, entre otros.',
     image: '/img2.webp',
   },
   {

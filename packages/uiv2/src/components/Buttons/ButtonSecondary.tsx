@@ -16,7 +16,7 @@ type Props = {
 
 const ButtonSecondary = ({text='Mi Boton', color='blue', onClick}: Props) => {
   return (
-    <button className={ `${ButtonColors[color]} vers-text-white vers-py-[.45rem] vers-px-[.5rem] vers-rounded-full  vers-flex vers-justify-center sm:vers-justify-between vers-items-center vers-gap-4`} onClick={onClick}>
+    <button className={ `${ButtonColors[color]} vers-text-white vers-py-[.45rem] vers-px-[.5rem] vers-rounded-full  vers-flex vers-justify-center sm:vers-justify-between vers-items-center vers-gap-4 hover:vers-scale-110 vers-transition-transform`} onClick={onClick}>
       <p className='vers-font-bold vers-uppercase sm:vers-text-xl vers-pl-[3rem]'>{text }</p>
       <FontAwesomeIcon icon={faArrowCircleRight} className='vers-text-4xl'/>
     </button>

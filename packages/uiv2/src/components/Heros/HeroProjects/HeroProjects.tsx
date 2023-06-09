@@ -9,7 +9,7 @@ export const HeroProjects = () => {
         <div className='vers-z-0 vers-flex vers-flex-col vers-justify-center vers-items-center vers-max-w-[320px] vers-gap-4 xsm:vers-gap-6 md:vers-gap-4 vers-p-1 sm:vers-p-[0] md:vers-bg-[rgba(256,256,256,.9)] md:vers-p-2 md:vers-pl-3 md:vers-rounded-xl'>
           <h2 className='vers-text-pink-800 vers-text-center md:vers-text-start vers-text-3xl xsm:vers-text-4xl md:vers-text-5xl vers-uppercase vers-font-bold'>nuestros proyectos</h2>
           <p className='vers-text-pink-800 vers-text-center md:vers-text-start vers-text-xl sm:vers-text-xl xsm:vers-text-2xl'>Cada proyecto se realiza con la maxima energia y apoyo posible.</p>
-          <i className='vers-text-pink-800 fa-solid fa-circle-arrow-left vers-text-5xl vers-pr-[.10rem] vers-rotate-[270deg]'></i>
+          <i className='vers-text-pink-800 fa-solid fa-circle-arrow-left vers-text-5xl vers-pr-[.10rem] vers-rotate-[270deg] hover:vers-scale-125 vers-transition-transform'></i>
         </div>
       </section>
     </BackGround>
