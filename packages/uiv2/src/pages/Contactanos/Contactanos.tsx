@@ -12,7 +12,7 @@ const InputClasses = 'vers-p-1 md:vers-p-3 vers-border-solid vers-border-4 vers-
 export const Contactanos = () => {
   const [formData, setFormData] = useState<object>({})
 
-  const onSubmit = (e:React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log(formData)
   }
