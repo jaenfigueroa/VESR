@@ -1,17 +1,17 @@
-import { CardProject } from '../../components/Cards/CardProject/CardProject'
+import CardProject from '../../components/Cards/CardProject'
+import MainContainer from '../../components/MainContainer/MainContainer'
 import { HeroProjects } from '../../components/Heros/HeroProjects/HeroProjects'
-import { Main } from '../../components/Main/Main'
 
 export const Proyectos = () => {
   return (
     <section className='vers-grow'>
       <HeroProjects/>
-      <Main>
+      <MainContainer>
         <div className='vers-flex vers-flex-col vers-gap-4 sm:vers-gap-6 md:vers-gap-8'>
-          <CardProject color='pink-800' direction='normal'/>
+          <CardProject direction='normal' color='purple' />
           <CardProject direction='reverse' color='blue' />
         </div>
-      </Main>
+      </MainContainer>
     </section>
   )
 }

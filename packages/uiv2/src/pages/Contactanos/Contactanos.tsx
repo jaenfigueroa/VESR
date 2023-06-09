@@ -1,5 +1,5 @@
-import { Main } from '../../components/Main/Main'
-import { Subtitle } from '../../components/Sutitle/Subtitle'
+import Title from '../../components/Title/Title'
+import MainContainer from '../../components/MainContainer/MainContainer'
 import {useState} from 'react';
 
 const InputLIst = [
@@ -23,8 +23,8 @@ export const Contactanos = () => {
 
   return (
     <section className='vers-grow vers-h-hero vers-flex'>
-      <Main>
-        <Subtitle text='Cóntactanos'>
+      <MainContainer>
+        <Title text='Cóntactanos'>
           <form className='vers-grid vers-grid-cols-1 sm:vers-grid-cols-2 vers-gap-4' onSubmit={onSubmit}>
             {
               InputLIst.map((input, index) => (
@@ -74,8 +74,8 @@ export const Contactanos = () => {
                 placeholder={'Enviar'} />
             </div>
           </form>
-        </Subtitle>
-      </Main>
+        </Title>
+      </MainContainer>
     </section>
   )
 }

@@ -1,16 +1,16 @@
-import { CardService } from '../../components/Cards/CardService/CardService'
+import Title from '../../components/Title/Title'
+import MainContainer from '../../components/MainContainer/MainContainer'
+import { CardService } from '../../components/Cards/CardService'
 import { Grid } from '../../components/Grid/Grid'
 import { HeroServicios } from '../../components/Heros/HeroServicios/HeroServicios'
-import { Main } from '../../components/Main/Main'
-import { Subtitle } from '../../components/Sutitle/Subtitle'
 import { SERVICES } from './data/Services'
 
 export const Servicios = () => {
   return (
     <div>
       <HeroServicios/>
-      <Main>
-        <Subtitle text='Servicios'>
+      <MainContainer>
+        <Title text='Servicios'>
           <Grid>
             <>
               {
@@ -20,8 +20,8 @@ export const Servicios = () => {
               }
             </>
           </Grid>
-        </Subtitle>
-      </Main>
+        </Title>
+      </MainContainer>
     </div>
   )
 }

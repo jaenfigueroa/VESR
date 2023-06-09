@@ -1,8 +1,8 @@
-import { CardCheckbox } from '../../components/Cards/CardCheckbox/CardCheckbox'
+import CardCheckbox from '../../components/Cards/CardCheckbox'
+import SlideSecondary from '../../components/Slides/SlideSecondary'
+import MainContainer from '../../components/MainContainer/MainContainer'
+import Title from '../../components/Title/Title'
 import { Hero } from '../../components/Heros/Hero/Hero'
-import { Main } from '../../components/Main/Main'
-import { Slide2 } from '../../components/Slides/Slide2/Slide2'
-import { Subtitle } from '../../components/Sutitle/Subtitle'
 import { COMO_LO_HACEMOS } from './data/comoLoHacemos'
 import { ESPECIFICOS_LIST } from './data/especificosList'
 import { IMGS_SLIDER } from './data/imgSlider'
@@ -25,41 +25,41 @@ export const Conocenos = () => {
         </div>
       </Hero>
 
-      <Main>
+      <MainContainer>
         <>
           <div className='vers-flex vers-flex-col md:vers-flex-row vers-gap-3 md:vers-gap-[0] vers-bg-lightxxx-gray'>
             <div className='vers-grow'>
-              <Subtitle text='misión'>
+              <Title text='misión'>
                 <p className='vers-bg-purple-300 vers-p-2 md:vers-p-4 vers-text-white'>Somos un voluntariado multidisciplinario que se desarrolla bajo los principios de la responsabilidad social enmarcado en los objetivos de desarrollo sostenible, principalmente a la promoción de la salud sexual y reproductiva por medio de la educación integral en la comunidad sanmarquina y población general.</p>
-              </Subtitle>
+              </Title>
             </div>
             <img className='vers-grow-0' src='/conocenos/image 4.png' alt='Dos mujeres mostrarndo el logo de VESR en sus espaldas' />
             <div className='vers-grow'>
-              <Subtitle text='visión'>
+              <Title text='visión'>
                 <p className='vers-bg-purple-300 vers-p-2 md:vers-p-4 vers-text-white'>Para el año 2022 consolidar una organización juvenil de voluntarios - facilitadores en educación sexual integral, desde las diferentes áreas académicas de la universidad, a nivel distrital y nacional.</p>
-              </Subtitle>
+              </Title>
             </div>
           </div>
 
-          <Subtitle text='objetivos'>
+          <Title text='objetivos'>
             <div className='vers-bg-pink-100 vers-p-2 md:vers-p-4 vers-flex vers-flex-col vers-gap-2 md:vers-gap-4 md:vers-flex-row md:vers-h-[250px] md:vers-items-center'>
               <div className='vers-flex vers-flex-col vers-gap-1 md:vers-gap-2'>
                 <h2 className='vers-text-xl md:vers-text-3xl vers-uppercase vers-font-bold'>general</h2>
                 <p>Promoción del bienestar en la salud sexual y reproductiva a través de la comunidad VESR para la comunidad.</p>
               </div>
               <div className=' md:vers-w-[70%] md:vers-h-[200px]'>
-                <Slide2>
+                <SlideSecondary>
                   {
                     IMGS_SLIDER.map((img, index) => (
                       <img key={index} className='vers-p-1 md:vers-p-2' src={img.image} alt={img.description} />
                     ))
                   }
-                </Slide2>
+                </SlideSecondary>
               </div>
             </div>
-          </Subtitle>
+          </Title>
 
-          <Subtitle text='especificos'>
+          <Title text='especificos'>
             <div className='vers-grid md:vers-grid-cols-2 vers-grid-rows-2 vers-gap-4 md:vers-gap-y-4 md:vers-gap-x-6'>
               {
                 ESPECIFICOS_LIST.map((item, index) => (
@@ -67,9 +67,9 @@ export const Conocenos = () => {
                 ))
               }
             </div>
-          </Subtitle>
+          </Title>
 
-          <Subtitle text='¿Cómo lo hacemos?'>
+          <Title text='¿Cómo lo hacemos?'>
             <div className='vers-p-2 vers-flex vers-flex-col vers-gap-4 md:vers-gap-8 md:vers-grid md:vers-grid-cols-3' >
               {
                 COMO_LO_HACEMOS.map((element, index) => (
@@ -80,9 +80,9 @@ export const Conocenos = () => {
                 ))
               }
             </div>
-          </Subtitle>
+          </Title>
         </>
-      </Main>
+      </MainContainer>
     </section>
   )
 }

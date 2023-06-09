@@ -1,16 +1,26 @@
-import { CardBiblioteca } from '../../components/Cards/CardBiblioteca/CardBiblioteca'
-import { Main } from '../../components/Main/Main'
+import CardBiblioteca, { VariantColor } from '../../components/Cards/CardBiblioteca'
+import MainContainer from '../../components/MainContainer/MainContainer'
+import { SECCTIONS_LIST } from './data/sectionList'
+
+const getColorByIndex = (index: number): VariantColor => {
+  const colors:VariantColor[] = ['purple', 'blue', 'red']
+  return colors[index % colors.length]
+}
 
 export const Biblioteca = () => {
   return (
     <section className='vers-grow'>
-      <Main>
+      <MainContainer>
         <div className='vers-flex vers-flex-col vers-gap-4 md:vers-mt-[-2rem]'>
-          <CardBiblioteca color='purple'/>
-          <CardBiblioteca color='red'/>
-          <CardBiblioteca color='blue'/>
+        {SECCTIONS_LIST.map((section, index) => (
+          <CardBiblioteca
+            key={index}
+            color={getColorByIndex(index)}
+            item={section}
+          />
+        ))}
         </div>
-      </Main>
+      </MainContainer>
     </section>
   )
 }

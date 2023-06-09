@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Button } from '../../components/Buttons/Button/Button'
+import ButtonPrimary from '../../components/Buttons/ButtonPrimary'
 
 export const NotFound = () => {
   return (
@@ -10,7 +10,7 @@ export const NotFound = () => {
           <p className='vers-text-xl sm:vers-text-2xl vers-text-gray'>La pagina a la que intenta acceder no existe o ha sido movida.</p>
         </div>
         <Link to='/inicio' relative='path'>
-          <Button text='Ir a la pagina de inicio' variant='primary' icon='face'/>
+          <ButtonPrimary text='Ir a la pagina de inicio'/>
         </Link>
       </div>
     </section>

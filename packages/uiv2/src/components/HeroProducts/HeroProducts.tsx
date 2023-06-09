@@ -1,4 +1,4 @@
-import { ButtonTertiary } from '../Buttons/ButtonTertiary/ButtonTertiary'
+import ButtonSecondary from '../Buttons/ButtonSecondary'
 import { FEATURES, Features } from './Data/features'
 
 export const HeroProducts = () => {
@@ -7,7 +7,7 @@ export const HeroProducts = () => {
       <div className='vers-max-w-[400px] sm:vers-max-w-[900px] vers-bg-grexxen vers-flex vers-flex-col vers-gap-2 sm:vers-gap-6 md:vers-gap-8 vers-items-center'>
         <h2 className='vers-text-white vers-text-center vers-text-4xl sm:vers-text-6xl md:vers-text-9xl vers-uppercase vers-font-bold'>Nuestros productos</h2>
         <p className='vers-max-w-[450px] vers-text-white vers-text-center sm:vers-text-2xl md:vers-text-2xl sm:vers-font-semibold'>Ofrecemos una gran variedad de productos de diferentes marcas y de la mejor calidad.</p>
-        <ButtonTertiary text='COMPRAR' color={'vers-bg-blue-dark'}/>
+        <ButtonSecondary text='COMPRAR' color='blue'/>
       </div>
 
       <div className='vers-flex vers-flex-col sm:vers-flex-row vers-gap-1 sm:vers-gap-2 md:vers-gap-3 '>
