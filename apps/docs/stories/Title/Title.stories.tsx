@@ -21,7 +21,7 @@ type Story = StoryObj<typeof Title>
 export const Example1:Story = {
   args: {
     text: 'objetivos',
-    children: <h1 className='vers-bg-green'>Hola mundo</h1>
+    children: <h1 className='vers-p-2 vers-border-dashed vers-border-[1px] vers-color-light-gray'>Aqui va el contenido</h1>
   },
 }
 
