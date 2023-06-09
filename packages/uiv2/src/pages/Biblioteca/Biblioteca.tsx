@@ -16,7 +16,9 @@ export const Biblioteca = () => {
           <CardBiblioteca
             key={index}
             color={getColorByIndex(index)}
-            item={section}
+            title={section.title}
+            description={section.description}
+            image={section.image}
           />
         ))}
         </div>
