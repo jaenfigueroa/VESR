@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Social } from '../../../../packages/uiv2/src/components/Social/Social';
 
 const meta:Meta<typeof Social> = {
@@ -6,25 +6,40 @@ const meta:Meta<typeof Social> = {
   component: Social,
   tags: ['autodocs'],
   argTypes: {
-    variant: {
+    color: {
       control: 'select',
       options: ['white', 'purple'],
     },
   },
+}
+
+type Story = StoryObj<typeof Social>
+
+export const Example1:Story = {
   args: {
-    variant: 'white',
+    color: 'white',
+    direction: 'row',
   },
 }
 
-export const Primary = {
+export const Example2:Story = {
   args: {
-    variant: 'white',
+    color: 'white',
+    direction: 'column',
   },
 }
 
-export const Secondary = {
+export const Example3:Story = {
   args: {
-    variant: 'purple',
+    color: 'purple',
+    direction: 'row',
+  },
+}
+
+export const Example4:Story = {
+  args: {
+    color: 'purple',
+    direction: 'column',
   },
 }
 

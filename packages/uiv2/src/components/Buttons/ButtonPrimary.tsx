@@ -5,22 +5,26 @@ export interface Props {
   color?: 'primary' | 'secondary'
   showIcon?: boolean
   iconType?: IconTypes
-  action?: () => void
+  onClick?: () => void
 }
 
 const defaultClasses = 'vers-px-3 vers-py-2 sm:vers-p-3 vers-text-md sm:vers-text-lg vers-text-white vers-font-bold vers-flex vers-gap-2 vers-duration-500'
 
-const colorClassNames = {
+export const colorClassNames = {
   primary: 'vers-bg-primary hover:vers-bg-green',
   secondary: 'vers-bg-tertiary hover:vers-bg-green-dark',
 }
 
-const ButtonPrimary = ({color= 'primary', text='Mi Boton', showIcon=false, iconType='face', action }: Props) => {
+export const Icons = {
+  face: <Icon type='face'/>
+}
+
+const ButtonPrimary = ({color= 'primary', text='Mi Boton', showIcon=false, iconType='face', onClick }: Props) => {
   const buttonClasses = `${colorClassNames[color]} ${defaultClasses}`
 
   return (
-    <button className={buttonClasses} onClick={action} >
-      {showIcon && <div className='vers-w-3'><Icon type={iconType} /></div>}
+    <button className={buttonClasses} onClick={onClick} >
+      {showIcon && <div className='vers-w-3'>{Icons[iconType]}</div>}
       {text}
     </button>
   )

@@ -22,7 +22,7 @@ export const Footer = () => {
         <div className='vers-flex vers-flex-col vers-items-center vers-gap-1 '>
           <h2 className='vers-text-white vers-font-bold vers-text-xl vers-mb-1'>SÍGUENOS</h2>
           <ul className='vers-flex vers-flex-row md:vers-flex-col vers-gap-3'>
-            <Social variant='white' direction='column'/>
+            <Social color='white' direction='column'/>
           </ul>
         </div>
 

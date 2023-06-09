@@ -57,7 +57,7 @@ export const Header = () => {
           )
         }
         <div className='vers-hidden xsm:vers-block'>
-          <Social variant='purple'/>
+          <Social color='purple'/>
         </div>
       </div>
 
