@@ -1,6 +1,6 @@
-import { Product } from '../../../components/Cards/CardProduct';
+import { ProductProps } from '../../../components/Cards/CardProduct';
 
-export const PRODUCTS_LIST:Product[] = [
+export const PRODUCTS_LIST:ProductProps[] = [
   {
     title: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
     description: 'Lorem ipsam, ullam numquam labore delectus laborum mollitia.',

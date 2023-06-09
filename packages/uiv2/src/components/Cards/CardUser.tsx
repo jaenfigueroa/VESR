@@ -6,7 +6,7 @@ export type CardUserProps = {
   image: string,
 }
 
-const CardUser = ({name, position, age, degree, image}:CardUserProps) => {
+const CardUser = ({name, position, image}:CardUserProps) => {
   return (
     <article className='vers-bg-purple-300 vers-flex vers-items-center vers-justify-center  vers-grow'>
       <div className='vers-p-4 sm:vers-p-4 vers-flex vers-flex-col vers-gap-2 vers-items-center '>
@@ -15,8 +15,8 @@ const CardUser = ({name, position, age, degree, image}:CardUserProps) => {
           <img className='vers-w-[60px] sm:vers-w-[80px] vers-absolute vers-ml-[8rem]  sm:vers-ml-[10rem] md:vers-ml-[12rem]' src='/comillas.svg' alt='Signos de comillas' />
         </div>
         <div className='vers-flex vers-flex-col vers-gap-1'>
-          <p className='vers-text-2xl vers-font-bold vers-text-white'>{name}</p>
-          <p className='vers-text-lg vers-font-medium vers-text-white'>{position }</p>
+          <p className='vers-text-2xl md:vers-text-3xl vers-font-bold vers-text-white vers-text-center'>{name}</p>
+          <p className='vers-text-lg md:vers-text-xl vers-font-medium vers-text-white vers-text-center'>{position }</p>
         </div>
       </div>
       {/* <div className='vers-p-2 sm:vers-p-4 vers-flex vers-flex-col vers-gap-1'>

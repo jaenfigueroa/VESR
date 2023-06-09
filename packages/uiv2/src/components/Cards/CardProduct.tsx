@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
-type Props = {
+export type ProductProps = {
   title: string,
   description: string
   price: number,
   image: string
 }
 
-const CardProduct = ({ title='Titulo', description='Descripcion', price=0,image='' }: Props) => {
+const CardProduct = ({ title='Titulo', description='Descripcion', price=0,image='' }: ProductProps) => {
   return (
     <article className='vers-bg-purple-500 vers-overflow-hidden vers-rounded-lg vers-drop-shadow-[3px_3px_5px_#f5b4ea] vers-border-solid vers-border-2 vers-border-purple-500'>
       <div className='vers-aspect-square vers-w-full'>

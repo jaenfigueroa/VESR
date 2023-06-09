@@ -6,19 +6,23 @@ export const COLORS:Record<VariantColor,string> = {
   purple: 'vers-bg-purple-300',
 }
 
-type Props = {
-  color: VariantColor,
+export interface ItemBiblioteca {
   title: string
   description: string
   image: string
 }
 
-const CardBiblioteca = ({ color='red', title='Titulo', description='descripcion', image='' }: Props) => {
+interface Props extends ItemBiblioteca {
+  color: VariantColor
+}
+
+const CardBiblioteca = ({  title='Titulo', description='descripcion', image='', color='red' }: Props) => {
   return (
-    <article className={`${COLORS[color]} md:vers-grid md:vers-grid-cols-[1fr,2fr] md:vers-h-[550px]`}>
+    <article className={`${COLORS[color]} md:vers-grid md:vers-grid-cols-[350px,2fr] md:vers-h-[550px] vers-overflow-hidden`}>
       <div className='vers-p-3 sm:vers-p-2 md:vers-flex vers-flex-col vers-flex vers-gap-1 md:vers-flex-row'>
 
-        <div className='md:vers-w-[50px] vers-flex md:vers-justify-center md:vers-items-center'>
+        {/* bloque 1 */}
+        <div className='md:vers-w-[50px] vers-flex md:vers-justify-center md:vers-items-center '>
           <div className='md:vers-flex md:vers-gap-4 md:vers-rotate-[-90deg] md:vers-translate-y-7 md:vers-translate-x-[-.2rem]'>
             <div className='vers-hidden md:vers-flex vers-flex-row vers-justify-center vers-items-center vers-gap-[.6rem]'>
               <div className='vers-w-[100px] vers-h-[2px] vers-bg-white'></div>
@@ -27,14 +31,16 @@ const CardBiblioteca = ({ color='red', title='Titulo', description='descripcion'
             <h2 className='vers-inline-block vers-text-white vers-text-2xl md:vers-text-3xl vers-uppercase vers-font-bold'>{title}</h2>
           </div>
         </div>
-
-        <div className='sm:vers-flex sm:vers-items-end md:vers-pb-6 vers-pr-1'>
-          <p className='vers-text-white vers-leading-[20px] sm:vers-leading-[30px] md:vers-leading-[35px]'>{description}</p>
+        {/* descripcion */}
+        <div className='sm:vers-flex sm:vers-items-end md:vers-pb-6 vers-relative md:vers-w-[255px]'>
+          <p className='vers-text-white vers-leading-[20px] sm:vers-leading-[30px] md:vers-leading-[35px] md:vers-w-full vers-break-words'>{description}</p>
         </div>
 
       </div>
-      <div className='vers-h-auto vers-overflow-hidden md:h-full vers-bg-blue'>
-        <img className='vers-aspect-[2/1] md:vers-w-full md:vers-h-full md:vers-object-cover' src={ image} alt='' />
+
+      {/* imagen */}
+      <div className='vers-h-auto vers-overflow-hidden md:h-full vers-w-full'>
+        <img className='vers-aspect-[2/1] md:vers-w-full md:vers-h-full md:vers-object-cover vers-bg-gray' src={image} alt='' />
       </div>
     </article>
   )

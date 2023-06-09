@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import CardUser from '../../../../packages/uiv2/src/components/Cards/CardUser';
 
@@ -6,32 +7,41 @@ const meta:Meta<typeof CardUser> = {
   component: CardUser,
   tags: ['autodocs'],
   argTypes: {
-    // title: {
-    //   description: 'El titulo que se va a mostrar en la tarjeta',
-    //   control: 'text',
-    // },
-    // text: {
-    //   description: 'El texto que se va mostrar en la tarjeta',
-    //   control: 'text',
-    // },
-  },
-  parameters: {
-    backgrounds: {
-      values: [
-        { name: 'red', value: '#f00' },
-        { name: 'green', value: '#0f0' },
-        { name: 'blue', value: '#00f' },
-      ],
-      default: 'red',
+    name: {
+      description: 'Nombre del usuario',
+      control: 'text',
     },
+    age: {
+      description: 'Edad del usuario',
+      control: 'number'
+    },
+    degree: {
+      description: 'Carrera universitaria o instituto',
+      control: 'text'
+    },
+    position: {
+      description: 'Cargo en la organizacion',
+      control: 'text'
+    },
+    image: {
+      description: 'Fotografia del usuario',
+      control: 'text'
+    }
   },
+  decorators: [
+    (Component) => (
+      <div className='vers-w-[400px]'>
+        <Component/>
+      </div>
+    )
+  ]
 }
 
 type Story = StoryObj<typeof CardUser>
 
 export const Example1:Story = {
   args: {
-    name: 'Juan',
+    name: 'Juan Ramirez',
     age: 23,
     degree: 'Ing. Industrial',
     position:'Genente general',
