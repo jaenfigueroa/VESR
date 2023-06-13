@@ -1,6 +1,5 @@
 import { Config } from 'tailwindcss'
-import sharedConfig from '../tailwind-config/tailwind.config' 
-
+import sharedConfig from '../tailwind-config/tailwind.config'
 
 const config: Config = {
   content: ['./src/**/*.{html,ts,tsx,js,jsx}'],
