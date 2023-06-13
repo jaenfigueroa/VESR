@@ -23,6 +23,9 @@ jobs:
       - name: Instalar pnpm
         run: npm install -g pnpm
 
+      - name: Verificar la version de pnpm
+        run: pnpm --version
+
       - name: Instalar Dependencias
         run: pnpm install
 
