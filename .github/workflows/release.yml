@@ -34,10 +34,10 @@ jobs:
 
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
-          uses: JamesIves/github-pages-deploy-action@v4
-          with:
-            branch: gh-pages
-            folder: packages/uiv2/dist
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: packages/uiv2/dist
 
       # - name: Create Release Pull Request or Publish to npm
       #   id: changesets
